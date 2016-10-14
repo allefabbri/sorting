@@ -50,6 +50,10 @@ int main () {
 
   // sorting on first component
   std::sort (myvec.begin(), myvec.end(), compare_first); 
+  // or using lambdas
+  //std::sort (myvec.begin(), myvec.end(), [] (int_pair a, int_pair b) {
+  //  return a.first < b.first;
+  //} ); 
   titled_print("Sorting on first component", myvec);
 
   // sorting on second component
